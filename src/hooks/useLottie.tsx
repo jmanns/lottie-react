@@ -10,7 +10,7 @@ import lottie, {
   AnimationItem,
   AnimationDirection,
   AnimationSegment,
-} from "lottie-web";
+} from "lottie-web/build/player/lottie_light";
 import {
   Listener,
   LottieOptions,

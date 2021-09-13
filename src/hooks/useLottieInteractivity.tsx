@@ -1,4 +1,4 @@
-import { AnimationSegment } from "lottie-web";
+import { AnimationSegment } from "lottie-web/build/player/lottie_light";
 import React, { useEffect, ReactElement, useRef } from "react";
 import { InteractivityProps } from "../types";
 
@@ -132,7 +132,7 @@ export const useInitInteractivity = ({
       return () => {
         document.removeEventListener("scroll", scrollHandler);
       };
-    }
+    };
 
     const cursorModeHandler = () => {
       const handleCursor = (_x: number, _y: number) => {
@@ -238,7 +238,7 @@ export const useInitInteractivity = ({
         wrapper.removeEventListener("mousemove", mouseMoveHandler);
         wrapper.removeEventListener("mouseout", mouseOutHandler);
       };
-    }
+    };
 
     switch (mode) {
       case "scroll":
